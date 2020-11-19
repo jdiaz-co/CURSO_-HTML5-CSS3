@@ -1,4 +1,4 @@
-# bienes_raices
+# Bienes_raices
 
 Proyecto dentro del curso de UDEMY: Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL
 Aprende Desarrollo Web con este curso 100% práctico, paso a paso y sin conocimientos previos, INCLUYE PROYECTO FINAL.
