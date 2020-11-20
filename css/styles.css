@@ -1,6 +1,13 @@
+
 html {
+	box-sizing: border-box;
 	font-size: 62.5%; /**reset para REMS 62.5 = 10px**/
 }
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 
 /*BODY*/
 
@@ -15,6 +22,10 @@ body {
 .contenedor{
 	max-width: 120rem;/**1200px**/
 	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
 }
 
 h1 {
@@ -33,6 +44,8 @@ h4 {
 	font-size: 2.6rem;
 }
 
+
+
 /**UTILIDADES**/
 .section {
 	margin-top: 2rem;
@@ -45,6 +58,29 @@ h4 {
 
 .centrar-texto {
 	text-align: center;
+}
+
+.d-block {
+	display: block!important;
+}
+/** BOTONES **/
+.boton {
+	color: #ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.8rem;
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+	display: inline-block;
+	text-align: center;
+}
+
+.boton-amarillo {
+	background-color: #E08709;
+}
+
+.boton-verde {
+	background-color: #71B100;
 }
 /* Header */
 
@@ -108,4 +144,70 @@ h4 {
 
 .icono h3{
 	text-transform: uppercase;
+}
+
+/** ANUNCIOS **/
+
+.contenedor-anuncios{
+	display: flex;
+	justify-content: space-between;
+}
+
+.anuncio {
+	flex-basis: calc(33.3% - 1rem);
+	border: 1px solid #b5b5b5;
+	background-color: #f5f5f5;
+}
+
+.contenido-anuncio {
+	padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenido-anuncio p {
+	margin: 0;
+}
+
+.precio {
+	color: #71b100;
+	font-weight: 700;
+}
+
+.iconos-caracteristicas {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.iconos-caracteristicas li {
+	display: flex;
+}
+
+.iconos-caracteristicas li img {
+	margin-right: 2rem;
+}
+
+.ver-todas {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/** contacto-home **/
+.imagen-contacto {
+	background-image: url(../img/encuentra.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 40rem;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-contacto {
+	flex: 1;
+	color: #ffffff;
+}
+
+.contenido-contacto p {
+	font-size: 1.8rem;
 }
