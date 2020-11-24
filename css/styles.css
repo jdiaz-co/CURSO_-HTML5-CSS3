@@ -84,6 +84,11 @@ h4 {
 }
 /* Header */
 
+.site-header {
+	background-color: #333333;
+	padding: 1rem 0 3rem 0;
+}
+
 .site-header.inicio{
 	background-image: url(../img/header.jpg);
 	background-position: center center;
@@ -201,6 +206,7 @@ h4 {
 	height: 40rem;
 	display: flex;
 	align-items: center;
+	margin-top: 2rem;
 }
 
 .contenido-contacto {
@@ -210,4 +216,122 @@ h4 {
 
 .contenido-contacto p {
 	font-size: 1.8rem;
+}
+
+/** seccion inferior **/
+
+.seccion-inferior {
+	display: flex;
+	justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+	flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales {
+	flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type {
+	margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+	flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada {
+	flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a {
+	color: black;
+	text-decoration: none;
+}
+
+.texto-entrada h4 {
+	margin:  0;
+	line-height: 2.8rem;
+}
+
+.texto-entrada h4::after {
+	content: '';
+	display: block;
+	width: 15rem;
+	height: .5rem;
+	background-color: #71B100;
+	margin-top: 1rem;
+}
+
+.texto-entrada span {
+	color: #E08709;
+}
+
+/** testimoniales **/
+
+.testimonial {
+	background-color: #71b100;
+	font-size: 2.4rem;
+	padding: 2rem;
+	color: #ffffff;
+	border-radius: 2rem;
+}
+
+.testimonial p {
+	text-align: right;
+}
+
+.testimonial blockquote::before {
+	content: '';
+	background-image: url(../img/comilla.svg);
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	left: -2rem;
+}
+
+.testimonial blockquote {
+	position: relative;
+	padding-left: 5rem;
+	font-weight: 300;
+}
+
+/** footer **/
+
+.site-footer {
+	background-color: #333333;
+	margin: 0;
+}
+
+.contenedor-footer {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright {
+	margin: 0;
+	color: #ffffff;
+}
+
+/** INTERNAS **/
+
+.contenido-nosotros {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0;
+	padding: 0 0 3rem 0;
 }
