@@ -35,12 +35,47 @@
 		<h2 class="fw300 centrar-texto">Rellena el formulario de contacto</h2>
 
 		<form action="">
+			<fieldset>
+				<legend>Información Personal</legend>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" placeholder="Tu Nombre">
 
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" placeholder="Tu Nombre">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" placeholder="Tu correo electrónico" required>
 
-			<label for="email">E-mail</label>
-			<input type="email" id="email" placeholder="Tu correo electrónico" required>
+				<label for="telefono">Teléfono:</label>
+				<input type="tel" id="telefono" placeholder="Tu teléfono" required>
+
+				<label for="mensaje">Mensaje:</label>
+
+				<textarea  id="mensaje"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Información sobre Propiedad</legend>
+				<label for="opciones">Vende o Compra</label>
+				<select id="opciones">
+					<option value="" disabled selected>-- Seleccione --</option>
+					<option value="Compra">Compra</option>
+					<option value="Vende">Vende</option>
+				</select>
+
+				<label for="cantidad">Cantidad</label>
+				<input type="number" min="0" max="100" step="5">
+			</fieldset>
+
+			<fieldset>
+				<legend>Contacto</legend>
+
+				<p>Como desea ser Contactado:</p>
+
+				<label for="telefono">Teléfono</label>
+				<input type="radio" name="contacto" id="telefono">
+				
+				<label for="correo">E-mail</label>
+				<input type="radio" name="contacto" id="correo">
+
+			</fieldset>
 
 			<input type="submit">
 
