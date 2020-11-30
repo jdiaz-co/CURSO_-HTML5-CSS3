@@ -356,5 +356,22 @@ label {
 	display: block;
 }
 
+input:not([type="submit"]),
+textarea,
+select {
+	padding: .5rem;
+	display: block;
+	width: 100%;
+	background-color: #e1e1e1;
+	margin-bottom: 2rem;
+	border: none;
+	border-radius: 1rem;
+}
+select {
+	--webkit--apperance: none;
+	appearance: none;
+}
 
-
+textarea {
+	height: 20rem;
+}
