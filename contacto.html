@@ -68,13 +68,14 @@
 				<legend>Contacto</legend>
 
 				<p>Como desea ser Contactado:</p>
-
-				<label for="telefono">Teléfono</label>
-				<input type="radio" name="contacto" id="telefono">
 				
-				<label for="correo">E-mail</label>
-				<input type="radio" name="contacto" id="correo">
-
+				<div class="forma-contacto">
+					<label for="telefono">Teléfono</label>
+					<input type="radio" name="contacto" id="telefono">
+					
+					<label for="correo">E-mail</label>
+					<input type="radio" name="contacto" id="correo">
+				</div>
 				<p>Si eligió Teléfono, elija la fecha y hora</p>
 				<label for="fecha">Fecha:</label>
 				<input type="date" id="fecha">
@@ -85,7 +86,7 @@
 
 			</fieldset>
 
-			<input type="submit" value="Enviar">
+			<input type="submit" value="Enviar" class="boton boton-verde">
 
 
 

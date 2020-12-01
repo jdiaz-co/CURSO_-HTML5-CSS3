@@ -74,11 +74,14 @@ h4 {
 	text-decoration: none;
 	font-size: 1.8rem;
 	padding: 1rem 3rem;
-	margin-top: 3rem;
+	margin: 1rem 0 ;
 	display: inline-block;
 	text-align: center;
+	border: none;
 }
-
+.boton:hover {
+	cursor: pointer;
+}
 .boton-amarillo {
 	background-color: #E08709;
 }
@@ -352,7 +355,20 @@ h4 {
 }
 
 /** CONTACTO **/
+
+form p {
+	font-size: 1.5rem;
+	color: #4f4f4f;
+	margin: 2rem 0 0 0;
+}
+
+legend {
+	font-size: 2rem;
+	color: #414141;
+}
 label {
+	font-weight: 700;
+	text-transform: uppercase;
 	display: block;
 }
 
@@ -367,6 +383,10 @@ select {
 	border: none;
 	border-radius: 1rem;
 }
+input[type="radio"] {
+	width: auto;
+	margin: 0;
+}
 select {
 	--webkit--apperance: none;
 	appearance: none;
@@ -374,4 +394,11 @@ select {
 
 textarea {
 	height: 20rem;
+}
+
+.forma-contacto {
+	max-width: 30rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
